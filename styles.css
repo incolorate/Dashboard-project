@@ -8,6 +8,7 @@ body {
   padding: 0;
 }
 
+/* Layout */
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -27,6 +28,43 @@ body {
 .project-container {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+}
+
+.projects {
+  grid-column: 1/2;
+}
+
+.announcements,
+.trending {
+  grid-column: 2/3;
+}
+
+/* Style */
+
+.dashboard-container {
+  background: rgb(62, 62, 255);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.db-list {
+  list-style: none;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.db-list:first-of-type {
+  margin-bottom: 75px;
+}
+.dashboard-container li {
+  margin-bottom: 1rem;
 }
 
 div {
