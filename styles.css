@@ -13,6 +13,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -81,6 +82,9 @@ body {
   margin-right: 1.5rem;
 }
 
+.db-list > li:hover{
+  transform: scale(1.1);
+}
 /* Header container */
 
 .header-container {
@@ -127,6 +131,9 @@ body {
   height: 5vh;
   background-color: #99f6e4;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-image {
@@ -160,6 +167,9 @@ body {
   color: var(--sky-50);
   font-size: 1rem;
   display: inline-block;
+}
+.user-options > button:hover {
+  background-color: var(--sky-600);
 }
 
 .user-nickname {
@@ -239,6 +249,24 @@ body {
 .projects-container p {
   font-size: 3vh;
 }
+
+/* trending */
+.new-trend {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.mihai {
+  background-color: rgb(128, 255, 0);
+}
+
+.alex {
+  background-color: blueviolet;
+}
+
+.dodo {
+  background-color: cadetblue;
+}
 /* Classes to add/remove based on screen size */
 
 #responsive-logo {
@@ -246,6 +274,11 @@ body {
   display: none;
 }
 
+.xl-profile-image {
+  width: 70%;
+}
+
+/* Responsive */
 @media only screen and (max-width: 700px) {
   .dashboard-container {
     display: none;
