@@ -240,7 +240,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 15px;
+  font-size: 1rem;
 }
 
 .divider {
@@ -254,7 +254,7 @@ body {
 .new-trend {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
 }
 .mihai {
   background-color: rgb(128, 255, 0);
